@@ -12,7 +12,7 @@
             @foreach ($posts as $post)
             <div class='post'>
                 <h2 class='title'>
-                    <a herf="/posts/{{ $post->id}}">{{ $post->title}}</a>
+                    <a herf="/posts/{{ $post->id }}">{{ $post->title}}</a>
                 </h2>
                 <p class='body'>{{ $post->body }}</p>
             </div>
