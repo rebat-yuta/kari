@@ -6,14 +6,13 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
-    <body>
+    <body class="antialised">
         <h1>Blog Name</h1>
         <div class='posts'>
             @foreach ($posts as $post)
             <div class='post'>
-                <h2 class='title'>
-                    <a herf="/posts/{{ $post->id }}">{{ $post->title}}</a>
-                </h2>
+                    <a herf="/posts/{{ $post->id }}"><h2 class='title'>{{ $post->title }}</a>
+                </h2></a>
                 <p class='body'>{{ $post->body }}</p>
             </div>
             @endforeach 
