@@ -13,7 +13,7 @@ class Post extends Model
     'title',
     'body',
 ];
-  public function getByLimit(int $limit_count = 10)
+  public function getByLimit(int $limit_count = 5)
 {
    return $this->orderBy('updated_at', 'DESC')->limit($limit_count)->get();
 }
